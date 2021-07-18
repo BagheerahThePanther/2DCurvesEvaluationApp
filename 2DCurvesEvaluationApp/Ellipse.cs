@@ -13,11 +13,6 @@ namespace _2DCurvesEvaluationApp
         public Vector2D RadiusX { get => firstParameter; }
         public Vector2D RadiusY { get => secondParameter; }
 
-        /*public override Vector2D getPoint(double t)
-        {
-            return new Vector2D(calculateX(t), calculateY(t));
-        }*/
-
         public override Vector2D getFirstDerivative(double t)
         {
             return new Vector2D(-RadiusX.X * Math.Sin(t), RadiusY.Y * Math.Cos(t));
