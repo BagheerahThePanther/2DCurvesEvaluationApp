@@ -20,7 +20,7 @@ namespace _2DCurvesEvaluationApp
 
         public override Vector2D getFirstDerivative(double t)
         {
-            return new Vector2D(Direction.X, Direction.Y);
+            return new Vector2D(-RadiusX.X * Math.Sin(t), RadiusY.Y * Math.Cos(t));
         }
 
         protected override double calculateX(double t)
