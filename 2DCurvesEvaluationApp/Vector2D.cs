@@ -95,17 +95,6 @@ namespace _2DCurvesEvaluationApp
                               Vector2D1.y - Vector2D2.y);
         }
 
-        public static Point2D operator +(Vector2D Vector2D, Point2D Point2D)
-        {
-            return new Point2D(Point2D.X + Vector2D.x, Point2D.Y + Vector2D.y);
-        }
-
-        public static Point2D Add(Vector2D Vector2D, Point2D Point2D)
-        {
-            return new Point2D(Point2D.X + Vector2D.x, Point2D.Y + Vector2D.y);
-        }
-
-
         public static Vector2D operator *(Vector2D Vector2D, double scalar)
         {
             return new Vector2D(Vector2D.x * scalar,
@@ -155,10 +144,9 @@ namespace _2DCurvesEvaluationApp
             return Vector2D1.x * Vector2D2.y - Vector2D1.y * Vector2D2.x;
         }
 
-        public static explicit operator Point2D(Vector2D Vector2D)
+        public virtual string toString()
         {
-            return new Point2D(Vector2D.x, Vector2D.y);
+            return "(" + x.ToString("0.0") + "; " + y.ToString("0.0") + ")";
         }
-
     }
 }
