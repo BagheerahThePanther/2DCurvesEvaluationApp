@@ -19,7 +19,11 @@ namespace _2DCurvesEvaluationApp
 
         private void buttonShow_Click(object sender, EventArgs e)
         {
-
+            CurvesManager curvesManager = new CurvesManager();
+            curvesManager.generateRandomCurves(Decimal.ToInt32(numericUpDownNumberOfElems.Value));
+            textBoxResult.Clear();
+            textBoxResult.AppendText(curvesManager.printAllCurves());
+            textBoxResult.AppendText(curvesManager.printAllCurvesAt(Math.PI / 4));
         }
     }
 }

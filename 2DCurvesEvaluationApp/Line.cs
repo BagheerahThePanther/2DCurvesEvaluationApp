@@ -45,5 +45,10 @@ namespace _2DCurvesEvaluationApp
             return OriginPoint.Y + Direction.Y * t;
         }
 
+        public virtual string toString()
+        {
+            return "Линия с О = " + OriginPoint.toString() + ", D = " + Direction.toString() + "; ";
+        }
+
     }
 }

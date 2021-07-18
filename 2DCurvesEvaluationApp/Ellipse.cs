@@ -32,5 +32,9 @@ namespace _2DCurvesEvaluationApp
             return RadiusY.Y * Math.Sin(t);
         }
 
+        public override string toString()
+        {
+            return "Эллипс с Rx = " + RadiusX.X + ", Ry = " + RadiusY.Y + "; ";
+        }
     }
 }

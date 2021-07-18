@@ -143,5 +143,10 @@ namespace _2DCurvesEvaluationApp
         {
             return Vector2D1.x * Vector2D2.y - Vector2D1.y * Vector2D2.x;
         }
+
+        public virtual string toString()
+        {
+            return "(" + x.ToString("0.0") + "; " + y.ToString("0.0") + ")";
+        }
     }
 }

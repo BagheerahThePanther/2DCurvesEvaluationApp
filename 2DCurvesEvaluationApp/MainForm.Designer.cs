@@ -49,9 +49,24 @@ namespace _2DCurvesEvaluationApp
             // numericUpDownNumberOfElems
             // 
             this.numericUpDownNumberOfElems.Location = new System.Drawing.Point(295, 28);
+            this.numericUpDownNumberOfElems.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.numericUpDownNumberOfElems.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             this.numericUpDownNumberOfElems.Name = "numericUpDownNumberOfElems";
             this.numericUpDownNumberOfElems.Size = new System.Drawing.Size(56, 20);
             this.numericUpDownNumberOfElems.TabIndex = 1;
+            this.numericUpDownNumberOfElems.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // buttonShow
             // 
@@ -68,8 +83,9 @@ namespace _2DCurvesEvaluationApp
             this.textBoxResult.Location = new System.Drawing.Point(12, 54);
             this.textBoxResult.Multiline = true;
             this.textBoxResult.Name = "textBoxResult";
+            this.textBoxResult.ReadOnly = true;
             this.textBoxResult.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxResult.Size = new System.Drawing.Size(439, 384);
+            this.textBoxResult.Size = new System.Drawing.Size(735, 384);
             this.textBoxResult.TabIndex = 3;
             // 
             // label2
@@ -85,7 +101,7 @@ namespace _2DCurvesEvaluationApp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 450);
+            this.ClientSize = new System.Drawing.Size(759, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.buttonShow);
